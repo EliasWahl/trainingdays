@@ -1,3 +1,5 @@
+#test
+
 name: day4-scm-contactsapi
 
 on:
@@ -88,7 +90,7 @@ jobs:
         with:
           name: drop
           path: ${{ env.BICEP_MODULE_PATH }}
-          retention-days: 30
+          retention-days: 29
 
   deploy-to-dev:
     if: (github.repository == 'azdc-training-campana-schott/trainingdays') && ((github.event_name == 'push') || (github.event_name == 'workflow_dispatch'))
