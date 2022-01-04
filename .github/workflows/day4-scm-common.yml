@@ -42,7 +42,7 @@ jobs:
           name: drop
           path: ${{ env.BICEP_MODULE_PATH }}
           if-no-files-found: error
-          retention-days: 30
+          retention-days: 28
 
   deploy-to-dev:
     if: (github.repository == 'azdc-training-campana-schott/trainingdays') && ((github.event_name == 'push') || (github.event_name == 'workflow_dispatch'))
