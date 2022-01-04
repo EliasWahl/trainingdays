@@ -83,7 +83,7 @@ jobs:
         with:
           name: scmfe
           path: ${{ env.FRONTEND_DIST_PATH }}
-          retention-days: 29
+          retention-days: 28
 
   deploy-to-dev:
     if: (github.repository == 'azuredevcollege/trainingdays') && ((github.event_name == 'push') || (github.event_name == 'workflow_dispatch'))
